@@ -9,7 +9,7 @@ func random() interface{} {
 func main() {
 	/**
 	type assertion adalah kemampuan merubah tipe menjadi tipe data yang diinginkan
-	fitur ini seringkali digunakan ketika kita bertemu denga data interface kosong
+	fitur ini seringkali digunakan ketika kita bertemu dengan data interface kosong
 	*/
 	// result := random().(string)
 	// fmt.Println(result)
@@ -17,8 +17,7 @@ func main() {
 	// resultInt := random().(int)
 	// fmt.Println(resultInt) // panic
 
-	// cara yang lebih aman
-	
+	// cara yang lebih aman	
 	val := random()
 	switch value := val.(type) {
 	case string :
